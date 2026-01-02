@@ -1,0 +1,167 @@
+.betting-page {
+  padding: 2rem 1rem 100px 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.betting-page h1 {
+  color: var(--neon-green);
+  text-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.betting-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.matches-section h2,
+.betslip-section h2 {
+  color: var(--neon-green);
+  margin-bottom: 1.5rem;
+}
+
+.matches-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.match-card {
+  padding: 1.5rem;
+}
+
+.match-card h3 {
+  color: var(--primary-text);
+  margin-bottom: 0.5rem;
+}
+
+.match-card p {
+  margin-bottom: 1rem;
+}
+
+.odds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.odds-btn {
+  background-color: var(--primary-bg);
+  border: 2px solid var(--secondary-text);
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: var(--primary-text);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.odds-btn:hover {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.3);
+}
+
+.odds-value {
+  color: var(--neon-green);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.betslip-card {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.selections-list {
+  margin-bottom: 1.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.selection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-bg);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid var(--neon-green);
+}
+
+.selection-match {
+  color: var(--primary-text);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.selection-detail {
+  color: var(--secondary-text);
+  font-size: 0.8rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--loss-red);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.remove-btn:hover {
+  color: #ff6b6b;
+}
+
+.betslip-card .input-field {
+  margin-bottom: 1rem;
+}
+
+.summary {
+  background-color: var(--primary-bg);
+  border: 2px solid var(--neon-green);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: var(--primary-text);
+}
+
+.summary-row span:last-child {
+  font-weight: bold;
+}
+
+.betslip-card .btn {
+  width: 100%;
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--secondary-text);
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .betting-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .betslip-card {
+    position: relative;
+    top: 0;
+  }
+}

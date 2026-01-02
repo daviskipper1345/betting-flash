@@ -1,0 +1,111 @@
+.home-page {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 30px rgba(0, 255, 127, 0.5);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  color: var(--secondary-text);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.welcome-section h2 {
+  color: var(--neon-green);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--primary-text);
+  transition: all 0.3s ease;
+}
+
+.quick-link .icon {
+  font-size: 2.5rem;
+}
+
+.quick-link:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
+  color: var(--neon-green);
+}
+
+.features-section {
+  margin-top: 3rem;
+}
+
+.features-section h2 {
+  text-align: center;
+  color: var(--neon-green);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--neon-green);
+}
+
+.feature-card p {
+  color: var(--secondary-text);
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,123 @@
+:root {
+  --primary-bg: #0B0F14;
+  --card-bg: #151A21;
+  --neon-green: #00FF7F;
+  --gold: #FFD700;
+  --win-green: #1AFF00;
+  --loss-red: #FF3B3B;
+  --running-blue: #1E90FF;
+  --primary-text: #FFFFFF;
+  --secondary-text: #B0B0B0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Neon Glow Effect */
+.neon-glow {
+  text-shadow: 0 0 10px var(--neon-green);
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.5);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--neon-green);
+  color: #000;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.7);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: var(--card-bg);
+  color: var(--neon-green);
+  border: 2px solid var(--neon-green);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.5);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-bg);
+  border: 2px solid var(--secondary-text);
+  border-radius: 8px;
+  color: var(--primary-text);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--neon-green);
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.3);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-secondary {
+  color: var(--secondary-text);
+}
+
+.text-win {
+  color: var(--win-green);
+}
+
+.text-loss {
+  color: var(--loss-red);
+}
+
+.text-running {
+  color: var(--running-blue);
+}
